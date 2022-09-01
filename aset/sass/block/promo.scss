@@ -1,0 +1,22 @@
+.promo {
+  min-height: 526px;
+  padding-top: 55px;
+  display: grid;
+  background-image: url(../img/promo/promo__background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__slogan {
+  justify-self: center;
+}
+
+.promo__poligon {
+  width: 100%;
+  height: 62px;
+  background-color: $basic-white;
+  align-self: end;
+  clip-path: path(
+    "M0 62.1016V0.271118L250 26.305V0.271118L600 62.1016L950 0.271118V26.305L1200 0.271118V62.1016H0Z"
+  );
+}

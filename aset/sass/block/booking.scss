@@ -1,0 +1,47 @@
+.booking {
+  min-height: 411px;
+  background-image: url(../img/booking/booking__background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking__wrapper {
+  width: 800px;
+  margin: 0 auto;
+  padding: 94px 0;
+  color: $basic-white;
+  text-align: center;
+}
+
+.booking__title {
+  margin: 0;
+  margin-bottom: (15px + 50 - 36);
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__description {
+  margin: 0;
+  margin-bottom: 72px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.booking__form {
+  display: flex;
+}
+
+.booking__email {
+  border-radius: 10px 0px 0px 10px;
+  flex-grow: 1;
+}
+
+.booking__submit {
+  width: 200px;
+  border-radius: 0px 10px 10px 0px;
+}

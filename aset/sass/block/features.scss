@@ -1,0 +1,132 @@
+.features {
+  text-align: center;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 384px);
+}
+
+.features__item:nth-child(even),
+.services__item:nth-child(odd) {
+  background-color: $special-cold-light12;
+}
+
+.features__item:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  color: $basic-white;
+  background-color: $special-cold-light;
+}
+
+.features__item:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+
+  color: $basic-white;
+  background-color: $special-cold-light;
+}
+
+.features__item:nth-child(7) {
+  background-color: $special-cold-light20;
+}
+
+.features__photo {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.features__photo:nth-child(4) {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.features__tagline {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 63px;
+  margin-bottom: 23px;
+  width: 720px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: $basic-black;
+}
+
+.features__text-promo {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 79px;
+
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.features__title {
+  padding: 0;
+  margin: 0;
+  margin-top: 98px;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.features__text {
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  width: 220px;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.features__span {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.services__list {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 384px);
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.services__item {
+  padding-top: 89px;
+}
+
+.services__title {
+  padding: 0;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+}
+
+.services__text {
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  width: 250px;
+}

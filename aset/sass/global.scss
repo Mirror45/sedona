@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page__body {
+  min-height: 100vh;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: $basic-light;
+  color: $basic-dark;
+
+  &--overflow {
+    overflow: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: $basic-white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 29px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+
+  &--accent {
+    background-color: $special-warm-light;
+
+    &:focus {
+      background-color: $special-warm-dark;
+      outline-color: $special-cold-light;
+    }
+
+    &:hover {
+      background-color: $special-warm-dark;
+    }
+
+    &:active {
+      color: rgba($basic-white, 0.3);
+    }
+  }
+
+  &--secondary {
+    background-color: $special-cold-light;
+
+    &:focus {
+      background-color: $special-cold-dark;
+      outline-color: $special-warm-light;
+    }
+
+    &:hover {
+      background-color: $special-cold-dark;
+    }
+
+    &:active {
+      color: rgba($basic-white, 0.3);
+    }
+  }
+
+  &--tertiary {
+    background-color: $special-neutral-light;
+
+    &:focus {
+      background-color: $special-neutral-dark;
+      outline-color: $special-warm-light;
+    }
+
+    &:hover {
+      background-color: $special-neutral-dark;
+    }
+
+    :active {
+      color: rgba($basic-white, 0.3);
+    }
+  }
+}
+
+.input {
+  display: inline-block;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+
+  &::placeholder {
+    font-weight: normal;
+  }
+
+  &--basic {
+    background-color: $basic-light;
+
+    &:hover {
+      background-color: $basic-gray;
+    }
+
+    &:focus {
+      background-color: $basic-gray;
+      outline-color: $special-cold-light;
+    }
+
+    &:active {
+      background-color: $basic-white;
+      outline-color: $basic-black;
+    }
+  }
+
+  &--error {
+    border: 2px solid $status-error;
+  }
+}

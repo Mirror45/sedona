@@ -1,0 +1,34 @@
+.mailing-list {
+  padding: 91px 0;
+}
+
+.mailing-list__wrrapper {
+  text-align: center;
+  width: 576px;
+  margin: 0 auto;
+}
+
+.mailing-list__tagline {
+  margin: 0;
+  margin-bottom: (15px + 50 - 36);
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.mailing-list__description {
+  margin: 0;
+  margin-bottom: 57px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.mailing-list__button {
+  width: 100%;
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
+}
