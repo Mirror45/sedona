@@ -25,6 +25,140 @@
   </head>
   <body class="page__body">
     <div class="container">
+      <section class="filter">
+        <h2 class="filter__title">Гостиницы Седоны</h2>
+        <ul class="filter__pagination pagination">
+          <li class="pagination__item">
+            <a href="index.html" class="pagination__link">
+              <span class="visually-hidden">Главная</span>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 0.299988L0 5.79999V12H12V5.79999L6 0.299988ZM11 11H1V6.19999L6 1.69999L11 6.19999V11Z"
+                  fill="white"
+                />
+                <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">Гостиницы</a>
+          </li>
+        </ul>
+        <form action="" method="post" class="filter__form filter-form">
+          <div class="filter-form__column">
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">Инфраструктура:</legend>
+              <label
+                class="filter-form__label filter-form__checkbox filter-form__checkbox--checked"
+              >
+                Бассейн
+                <input
+                  type="checkbox"
+                  name="checkbox-pool"
+                  id="filter-form__checkbox-pool"
+                  class="visually-hidden"
+                  checked
+                />
+              </label>
+              <label
+                class="filter-form__label filter-form__checkbox filter-form__checkbox--checked"
+              >
+                Парковка
+                <input
+                  type="checkbox"
+                  name="checkbox-parking"
+                  id="filter-form__checkbox-parking"
+                  class="visually-hidden"
+                  checked
+                />
+              </label>
+              <label class="filter-form__label filter-form__checkbox">
+                Wi-Fi
+                <input
+                  type="checkbox"
+                  name="checkbox-wifi"
+                  id="filter-form__checkbox-wifi"
+                  class="visually-hidden"
+                />
+              </label>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">Тип жилья:</legend>
+              <label
+                class="filter-form__label filter-form__radio filter-form__radio--checked"
+              >
+                Гостиница
+                <input
+                  type="radio"
+                  name="radio-housing"
+                  id="filter-form__radio-hous"
+                  class="visually-hidden"
+                  checked
+                />
+              </label>
+              <label class="filter-form__label filter-form__radio">
+                Мотель
+                <input
+                  type="radio"
+                  name="radio-housing"
+                  id="filter-form__radio-motel"
+                  class="visually-hidden"
+                />
+              </label>
+              <label class="filter-form__label filter-form__radio">
+                Апартаменты
+                <input
+                  type="radio"
+                  name="radio-housing"
+                  id="filter-form__radio-apartments"
+                  class="visually-hidden"
+                />
+              </label>
+            </fieldset>
+          </div>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Стоимость, ₽:</legend>
+            <div class="wrapper">
+              <input
+                type="text"
+                name="number-from"
+                id="filter-form__number-from"
+                class="filter-form__number"
+                placeholder="0"
+              />
+              <input
+                type="text"
+                name="number-before"
+                id="filter-form__number-before"
+                class="filter-form__number"
+                placeholder="9000"
+              />
+            </div>
+            <div class="filter-form__range range">
+              <div class="range__button" tabindex="0"></div>
+              <div class="range__width"></div>
+              <div class="range__button" tabindex="0"></div>
+            </div>
+          </fieldset>
+          <div class="filter-form__bottons">
+            <button
+              type="submit"
+              class="filter-form__submit button button--secondary"
+            >
+              Применить
+            </button>
+            <button type="reset" class="filter-form__reset button">
+              Сбросить
+            </button>
+          </div>
+        </form>
+      </section>
       <section class="catalog-list">
         <h2 class="visually-hidden">Каталог гостиницы</h2>
         <section class="catalog-header">
@@ -329,7 +463,5 @@
         </div>
       </section>
     </div>
-
-    <script src="aset/js/script.js"></script>
   </body>
 </html>
