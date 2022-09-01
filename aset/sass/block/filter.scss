@@ -14,11 +14,11 @@
   line-height: 78px;
 }
 
-.filter__pagination {
+.filter__breadcrumbs {
   margin-bottom: 45px;
 }
 
-.pagination {
+.breadcrumbs {
   margin-left: 0;
   margin-top: 0;
   padding-right: 0;
@@ -27,7 +27,7 @@
   display: flex;
 }
 
-.pagination__item + .pagination__item {
+.breadcrumbs__item + .breadcrumbs__item {
   margin-left: 26px;
   position: relative;
 
@@ -47,7 +47,7 @@
   }
 }
 
-.pagination__link {
+.breadcrumbs__link {
   color: $basic-white;
   text-decoration: none;
   padding: 0px 8px;

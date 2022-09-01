@@ -3,6 +3,14 @@
   background-image: url(../img/booking/booking__background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--catalog {
+    background-image: none;
+  }
+
+  .booking__wrapper {
+    color: $basic-black;
+  }
 }
 
 .booking__wrapper {

@@ -34,8 +34,11 @@ const page__overlay = document.querySelector(".page__overlay");
 const modalBooking = document.querySelector(".modal-booking");
 const mailingList__button = document.querySelector(".mailing-list__button");
 
+if (!/catalog/.test(location)) {
+  mailingList__button.onclick = () => {
+    modal(modalBooking);
+    focus(modalBooking);
+  };
+}
+
 userNavigation__favorites.onclick = () => poppap(favoritesPoppap);
-mailingList__button.onclick = () => {
-  modal(modalBooking);
-  focus(modalBooking);
-};
